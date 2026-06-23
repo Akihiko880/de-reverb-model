@@ -101,7 +101,7 @@ print("[INFO] Model loaded successfully")
 # =========================
 noisy_files = sorted(glob.glob(os.path.join(args.test_dir, "*.wav")))
 
-for f in tqdm(noisy_files):
+for f in tqdm.tqdm(noisy_files):
 
     y, sr = load(f)
 
